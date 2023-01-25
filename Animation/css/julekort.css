@@ -1,0 +1,250 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.sne img {
+    height: 2.5vh;
+    width: auto;
+}
+.sne {
+    position: absolute;
+    top: -2.5vh;
+    left: 50vw;
+    animation: snefnug 15s infinite linear normal;
+    animation-play-state: running;
+    animation-fill-mode: forwards;
+}
+.sne:nth-of-type(1) {
+    left: 5vw;
+    animation-delay: 0;
+}
+.sne:nth-of-type(2) {
+    left: 30vw;
+    animation-delay: 1s;
+}
+.sne:nth-of-type(3) {
+    left: 55vw;
+    animation-delay: 2s;
+}
+.sne:nth-of-type(4) {
+    left: 10vw;
+    animation-delay: 3s;
+}
+.sne:nth-of-type(5) {
+    left: 35vw;
+    animation-delay: 4s;
+}
+.sne:nth-of-type(6) {
+    left: 80vw;
+    animation-delay: 5s;
+}
+.sne:nth-of-type(7) {
+    left: 49vw;
+    animation-delay: 6s;
+}
+.sne:nth-of-type(8) {
+    left: 90vw;
+    animation-delay: 7s;
+}
+.sne:nth-of-type(9) {
+    left: 6vw;
+    animation-delay: 8s;
+}
+.sne:nth-of-type(10) {
+    left: 60vw;
+    animation-delay: 9s;
+}
+.sne:nth-of-type(11) {
+    left: 25vw;
+    animation-delay: 10s;
+}
+.sne:nth-of-type(12) {
+    left: 70vw;
+    animation-delay: 11s;
+}
+.sne:nth-of-type(13) {
+    left: 13vw;
+    animation-delay: 12s;
+}
+.sne:nth-of-type(14) {
+    left: 67vw;
+    animation-delay: 13s;
+}
+.sne:nth-of-type(15) {
+    left: 28vw;
+    animation-delay: 14s;
+}
+.sne:nth-of-type(16) {
+    left: 75vw;
+    animation-delay: 15s;
+}
+.sne:nth-of-type(17) {
+    left: 85vw;
+    animation-delay: 0;
+}
+.sne:nth-of-type(18) {
+    left: 35vw;
+    animation-delay: -1s;
+}
+.sne:nth-of-type(19) {
+    left: 27vw;
+    animation-delay: -2s;
+}
+.sne:nth-of-type(20) {
+    left: 73vw;
+    animation-delay: -3s;
+}
+.sne:nth-of-type(21) {
+    left: 45vw;
+    animation-delay: -4s;
+}
+.sne:nth-of-type(22) {
+    left: 95vw;
+    animation-delay: -5s;
+}
+.sne:nth-of-type(23) {
+    left: 20vw;
+    animation-delay: -6s;
+}
+.sne:nth-of-type(24) {
+    left: 55vw;
+    animation-delay: -7s;
+}
+.sne:nth-of-type(25) {
+    left: 2vw;
+    animation-delay: -8s;
+}
+.sne:nth-of-type(26) {
+    left: 72vw;
+    animation-delay: -9s;
+}
+.sne:nth-of-type(27) {
+    left: 65vw;
+    animation-delay: -10s;
+}
+.sne:nth-of-type(28) {
+    left: 36vw;
+    animation-delay: -11s;
+}
+.sne:nth-of-type(29) {
+    left: 47vw;
+    animation-delay: -12s;
+}
+.sne:nth-of-type(30) {
+    left: 14vw;
+    animation-delay: -13s;
+}
+.sne:nth-of-type(31) {
+    left: 72vw;
+    animation-delay: -14s;
+}
+.sne:nth-of-type(32) {
+    left: 23vw;
+    animation-delay: -15s;
+}
+.himmel {
+    background-color: #05107A;
+    height: 80vh;
+}
+.juletræ img {
+    height: 70vh;
+    width: auto;
+}
+.juletræ {
+    position: absolute;
+    top: 20vh;
+    left: 10vw;
+}
+.bund {
+    background-color: white;
+    height: 20vh;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+.tekst {
+    font-size: 6vw;
+    opacity: 100%;
+    color: white;
+    position: absolute;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    animation-name: juletekst;
+    animation-timing-function: linear;
+    animation-duration: 10s;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.moon {
+    border-radius: 50%;
+    height: 20vh;
+    width: 20vh;
+    position: absolute;
+    right: 15vh;
+    animation-name: moonmove;
+    animation-duration: 45s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    box-shadow: 20px grey;
+}
+@keyframes snefnug {
+    0% {top:-2.5vh;}
+    33% {top:30vh;}
+    66% {top:60vh;}
+    100% {top:90vh;}
+}
+@keyframes juletekst {
+    0% {opacity: 0;}
+    100% {opacity: 100%;}
+}
+@keyframes moonmove {
+    0% {
+        background-color: #FAFAFC;
+        opacity: 70%;
+        bottom: 0;
+    }
+    33% {
+        background-color: #CDCED3;
+        opacity: 100%;
+        bottom: 70vh;
+    }
+    66% {
+        background-color: #CDCED3;
+        opacity: 100%;
+        bottom: 70vh;
+    }
+    100% {
+        background-color: #FAFAFC;
+        opacity: 70%;
+        bottom: 0;
+    }
+}
+@media only screen and (max-width:870px) {
+    .juletræ img {
+        width: 60vw;
+        height: auto;
+    }
+    .juletræ {
+        top: 32vh;
+        left: 0vh;
+    }
+    .tekst {
+        align-items:flex-start;
+        margin-top: 10vh;
+        font-size: 10vw;
+    }
+    .moon {
+        height: 10vh;
+        width: 10vh;
+        right: 5vw;
+    }
+}
+
+hej med di 
+yoyoyo

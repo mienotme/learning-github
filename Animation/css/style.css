@@ -1,0 +1,84 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+section {
+    margin: 3em;
+}
+h1 {
+    font-size: 2em;
+    margin-left: -1em;
+}
+.knap {
+    background-color: #6CD5FC;
+    padding: 0.5em;
+    border-radius: 5px;
+    border: 1px solid black;
+    color: black;
+    text-decoration: none;
+    transition: 0.5s ease-out;
+}
+.knap:hover {
+    background-color: #26ADDF;
+}
+.boxrotate {
+    height: 10em;
+    width: 10em;
+    background-color: #26DF8B;
+    transform: rotate(10deg);
+    transition: 0.7s ease-out;
+}
+.boxrotate:hover {
+    transform: rotate(90deg);
+    background-color: #1B9960;
+}
+.box1 {
+    background-color: #7930DC;
+    height: 10em;
+    width: 10em;
+    border-radius: 5px;
+    position: absolute;
+}
+.box2 {
+    background-color: #B986FE;
+    height: 10em;
+    width: 10em;
+    border-radius: 5px;
+    transition: transform 1s;
+    position: absolute;
+}
+.box2:hover {
+    transform: translate(20px, 20px);
+}
+.section {
+    margin-top: 15em;
+}
+.boxcolor {
+    height: 10em;
+    width: 10em;
+    background-color: #EE8126;
+    margin: 2em 0;
+    animation: changecolor 10s infinite;
+}
+@keyframes changecolor {
+    0% {background-color: #EE2626;}
+    25% {background-color: #EEDE26;}
+    50% {background-color: #1ACB3F;}
+    75% {background-color: #1B88E8;}
+    100% {background-color: #EE2626;}
+}
+.boxmove {
+    height: 10em;
+    width: 10em;
+    position: relative;
+    background-color: #E81B6F;
+    animation: skew 5s infinite;
+}
+@keyframes skew {
+    0% {transform: skewX(10deg);}
+    50% {transform: skewX(-10deg);}
+    100% {transform: skewX(10deg);}
+}

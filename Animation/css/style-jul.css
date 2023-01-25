@@ -1,0 +1,37 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+h1 {
+    font-size: 2em;
+    text-align: center;
+}
+.række {
+    margin: 1.5vw;
+    display: flex;
+}
+img {
+    width: 14vw;
+    height: 37vh;
+    margin: 1vw;
+}
+.box {
+    background-color: #E8251B;
+    height: 38vh;
+    width: 14vw;
+    position: absolute;
+    margin-top: -40vh;
+    margin-left: 1vw;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    padding-top: 5vh;
+    transition: 1s;
+}
+.box:hover {
+    background-color: transparent;
+    color: transparent;
+}
